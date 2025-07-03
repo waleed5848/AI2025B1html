@@ -1,0 +1,30 @@
+h1{
+    color: aqua;
+   background-color : yellowgreen;
+}
+div{
+    /* background-color: yellowgreen; */
+     /* font-size: 25px; */
+}
+.div{
+    background-color: aquamarine;
+}
+.div2{
+    font: size 25px;
+    /* border-top-color: aquamarine ;  */
+    border-top-width: 4px;
+    border-top-style: dashed;
+    border-top: red 10px solid;
+    border-bottom: yellow 10px solid;
+    border-left:blue 10px dashed ;
+    border-right: orange 10px double; 
+}
+.main{
+    height: 200px;
+    width: 300px;
+    border: 1px solid rgb(red, green, blue);
+    text-align: justify;
+}
+.c{
+    text-align: center;
+}
