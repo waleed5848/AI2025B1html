@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID selector</title>
+    <style>
+        #latestProducts .container .row #col {
+            height: auto;
+            width: 300px;
+          
+            background-color: maroon;
+            border: 5px solid black;
+            /* color: white; */
+            text-align: justify;
+        }
+        #latestProducts .container .row #col .content{
+            /* color: yellow; */
+        }
+        #latestProducts .container .row div{
+            color: yellowgreen;
+        }
+           
+        #bestSellingProducts .container .row #col img {
+            /* height: inherit; */
+             height: 200px;
+            width: 300px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <section id="latestProducts">
+    <div class="container">
+        <div class="row">
+            <div class="content c1" id="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde obcaecati voluptatibus delectus temporibus perspiciatis officiis vero saepe nihil provident. Incidunt laboriosam officia dolores aliquid aperiam officiis perferendis consequuntur sint alias.
+        </div>
+        <div id="col" class="content c2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat commodi aspernatur accusamus autem a, odio inventore modi voluptatem minima cupiditate quis eos amet ducimus aliquid deleniti. Vero est ut libero!</p></div>
+
+    </div>
+    </div>
+    </section>
+    <!-- yahan sa mera dosra container start hai -->
+     <section id="bestSellingProducts">
+        <div class="container">
+            <div class="row">
+            <div id="col">
+                <img src="images/im1.avif" alt="">
+            </div>
+            <div id="col"><img src="images/im2.jpg" alt=""></div>
+            <div id="col"><img src="images/img14.jpg" alt=""></div>
+            <div id="col"><img src="images/img16.jpg" alt=""></div>
+        </div>
+        </div>
+     </section>
+     
+</body>
+</html>
