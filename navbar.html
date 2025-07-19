@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
         header .container {
             height: 100px;
@@ -14,7 +15,7 @@
             height: inherit;
             width: 80%;
             /* border: 1px solid black; */
-            margin: 0px;
+            margin: 0px auto;
             display: flex;
             justify-content: space-between;
         }
@@ -46,6 +47,27 @@
             padding: 10px;
             margin-left: 15px;
         }
+        #gallery {
+            position: relative;
+        }
+        .dropdown{
+            position: absolute;
+            /* background-color: yellow; */
+            left: 30px;
+            width: 100px;
+            padding: 10px;
+            display: none;
+        }
+        .dropdown .item{
+            border-bottom: 5px;
+            padding-bottom: 5px;
+            padding-top: 3px;
+        }
+        #gallery:hover .dropdown{
+            display: block;
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -61,7 +83,11 @@
                     <li>home</li>
                     <li>about</li>
                     <li>contact</li>
-                    <li>anchor</li>
+                    <li id="gallery">Gallery<i class="fa fa-caret-down"></i>
+                    <div class="dropdown"><div class="item">indoor plants</div>
+                    <div class="item">indoor plants</div>
+                </div>
+                </li>
                     <li>margin</li>
                     <li>position</li>
                 </ul>
@@ -70,6 +96,13 @@
     </div>
     </header>
         <!-- Header End -->
-
+         <!-- cover image section -->
+          <section id="cover">
+            <div class="background">
+                <div class="col">
+                    <h1></h1>
+                </div>
+            </div>
+          </section>
 </body>
 </html>
