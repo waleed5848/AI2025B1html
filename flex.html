@@ -6,10 +6,10 @@
     <title>flex</title>
     <style>
         .container{
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         .row{
-            border: 1px solid black;
+            /* border: 1px solid black; */
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
@@ -17,7 +17,7 @@
         .col{
             height: 300px;
             width: 300px;
-            border: 1px solid black;
+            border: 1px solid rgb(114, 110, 110);
             margin-top: 10px;
             border-radius: 5px;
         }
@@ -25,7 +25,8 @@
             height: 220px;
         }
         .col .card .img img{
-            height: 220px;
+            height: inherit;
+            margin-top: 30px;
         }
         .content h2{
             position: relative;
@@ -43,6 +44,7 @@
 <body>
     <div class="container">
         <div class="row">
+            <!-- column start -->
             <div class="col">
                 <div class="card">
                     <div class="img"><img src="images/car.jpg" alt=""></div>
@@ -51,21 +53,37 @@
                     </div>
                 </div>
             </div>
-            <div class="col"> <div class="card">
+        <!-- column end -->
+            <!-- column start -->
+            <div class="col">
+                <div class="card">
                     <div class="img"><img src="images/car.jpg" alt=""></div>
                     <div class="content"><h2>honda civic</h2>
                         <p>RS: 1500000</p>
-                    </div></div>
-            <div class="col"> <div class="card">
+                    </div>
+                </div>
+            </div>
+        <!-- column end -->
+            <!-- column start -->
+            <div class="col">
+                <div class="card">
                     <div class="img"><img src="images/car.jpg" alt=""></div>
                     <div class="content"><h2>honda civic</h2>
                         <p>RS: 1500000</p>
-                    </div></div>
-            <div class="col"> <div class="card">
+                    </div>
+                </div>
+            </div>
+        <!-- column end -->
+            <!-- column start -->
+            <div class="col">
+                <div class="card">
                     <div class="img"><img src="images/car.jpg" alt=""></div>
                     <div class="content"><h2>honda civic</h2>
                         <p>RS: 1500000</p>
-                    </div></div>
+                    </div>
+                </div>
+            </div>
+        <!-- column end -->
         </div>
     </div>
 </body>
