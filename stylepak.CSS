@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header .first-line{
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(to top,rgb(0,0,22), rgba(0,0,27,255));
+}
+header .first-line .mini-navbar{
+    position: relative;
+    height: inherit;
+    width: 80%;
+    top: 10px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid rgb(106,100,90);
+}
+header .first-line .mini-navbar .top {
+    position: relative;
+}
+header .first-line .mini-navbar .sign span{
+    color: rgb(220,18,18);
+}
+header .first-line .mini-navbar .sign ul li{
+    display: inline;
+    justify-content: space-evenly;
+    list-style: none;
+}
+header .container{
+    height: 120px;
+    width: 100%;
+    margin-top: -5px;
+    background: linear-gradient(to bottom,rgba(0,0,27,255));
+}
+header .container .navbar{
+    position: relative;
+    height: inherit;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+header .container .navbar .col{
+    position: relative;
+}
+header .container .navbar .col ul li{
+    display: inline;
+    justify-content: space-between;
+    width: 80%;
+    height: inherit;
+    position: relative;
+    top: -30px;
+    margin-left: 90px;
+    color: white;
+}
+header .container .navbar .logo{
+    position: relative;
+    top: 30px;
+}
+#usedcars{
+    position: relative;
+    left: -280px;
+    top: 30px;
+}
+#usedcars .menu-item{
+    position: relative;
+}
+.dropdown1{
+    position: absolute;
+    width: 100px;
+    pad: 30px;
+    display: none;
+    z-index: 10;
+    background-color: white;
+    color: black;
+}
+  .dropdown1 .item{
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    padding-top: 3px;
+  }
+  #usedcars:hover .dropdown1{
+    display: block;
+  }
+  #newcars{
+    position: relative
+    lef
+    -150px;
+    top: 10px;
+  }
+  #newcars .menuitem2{
+    position: relative;
+  }
+  .dropdown2{
+    position: absolute;
+    width: 100px;
+    padding: 30px;
+    display: none;
+    z-index: 10;
+    background-color: white;
+    color: black;
+  }
+  .dropdown2 .item2{
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    padding-top: 3px;
+  }
+  #newcars:hover .dropdown2{
+    display: block;
+  }
+
