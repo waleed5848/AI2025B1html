@@ -1,115 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pak-wheels</title>
-  <link rel="stylesheet" href="stylepak.CSS">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browse Used Cars - PakWheels Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    .browser{
+      font-family: 'Inter', sans-serif;
+      background-color: #f6f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .browser {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 30px;
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .tabs div {
+      cursor: pointer;
+      color: #000;
+      padding-bottom: 8px;
+    }
+
+    .tabs .active {
+      border-bottom: 3px solid #007bff;
+      color: #007bff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 20px 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid #e1e4e8;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .card img, .card svg {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 12px;
+    }
+
+    .card span {
+      font-size: 15px;
+      color: #333;
+    }
+
+    .arrow {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .arrow button {
+      background: #f0f0f0;
+      border: none;
+      padding: 8px 12px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header starting -->
-  <header>
-    <!-- 1st-line-start -->
-  <div class="first-line">
-    <!-- mini-navbar-start -->
-    <div class="mini-navbar">
-      <div class="top">
-        <span><i class="fa-solid fa-mobile-screen-button" style="color: red; margin-right: 8px;"></i>Download App via SMS</span>
+  <div class="browser">
+    <!-- Heading -->
+    <h2>Browse Used Cars</h2>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <div class="active">Category</div>
+      <div>City</div>
+      <div>Make</div>
+      <div>Model</div>
+      <div>Budget</div>
+      <div>Body Type</div>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid">
+      <!-- Card 1 -->
+      <div class="card">
+      <img src="images/back1.svg" alt="Automatic">
+        <span>Automatic cars</span>
       </div>
-      <div class="sign">
-        <ul>
-          <li><span>اردو</span></li>
-          <li>Sign in</li>
-          <li>Sign Up</li>
-        </ul>
+
+      <!-- Card 2 -->
+      <div class="card">
+      <img src="images/back2.svg" alt="Automatic">
+        <span>Imported cars</span>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+      <img src="images/back3.svg" alt="Automatic">
+        <span>Jeep</span>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+      <img src="images/back4.svg" alt="Automatic">
+        <span>Hybrid cars</span>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+      <img src="images/back5.svg" alt="Automatic">
+        <span>Diesel cars</span>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+      <img src="images/back6.svg" alt="Automatic">
+        <span>1000cc cars</span>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card">
+      <img src="images/back7.svg" alt="Automatic">
+        <span>Small cars</span>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card">
+      <img src="images/back8.svg" alt="Automatic">
+        <span>Superdari</span>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="card">
+      <img src="images/back9.svg" alt="Automatic">
+        <span>Urgent</span>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="card">
+      <img src="images/back10.svg" alt="Automatic">
+        <span>Japanese cars</span>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="card">
+      <img src="images/back11.svg" alt="Automatic">
+        <span>2 Door</span>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="card">
+      <img src="images/back13.svg" alt="Automatic">
+        <span>3 Door</span>
       </div>
     </div>
-<!-- mini-navbar-END -->
+
+    <!-- Scroll Arrow -->
+    <div class="arrow">
+      <button>&#8594;</button>
+    </div>
   </div>
-<!-- 1st-line-END -->
-  <div class="container">
-    <div class="navbar">
-      <div class="logo"><img src="images/new-pw-logo-white-618259573a0604d3ae593b46213e2ab390bcc33336d4bdc3486405c7351ded13.svg" alt="pakwheels-logo"></div>
-      <div class="col">
-        <ul>
-          <li id="usedcars">
-            <div class="menu-item"></div>
-            Used Cars <i class="fa fa-caret-down"></i>
-            <div class="dropdown1">{
-              <div class="item">Find used cars for sale</div>
-              <div class="item">featured used Cars</div>
-              <div class="item">Sell your cars</div>
-              <div class="item">used car dealer </div>
-              <div class="item">price calculator</div>
-            }
-          </li>
-          </div>
-          <li id="newcars">
-                        <div class="menu-item2"></div>
-
-            New Cars <i class="fa fa-caret-down"></i>
-            <div class="dropdown2">
-              <div class="item2">Find new cars</div>
-              <div class="item2">Car comparison</div>
-              <div class="item2">Reviews</div>
-              <div class="item2">Price</div>
-              <div class="item2">On Road Price</div>
-            </div>
-          </li>
-          <li id="bikes">
-
-            Bikes <i class="fa fa-caret-down"></i>
-            <div class="dropdown3">
-              <div class="item3">Find used bikes</div>
-              <div class="item3">Used bike listing</div>
-              <div class="item3">Featured used bikes</div>
-              <div class="item3">Sell your bikes</div>
-              <div class="item3">Used bike dealers</div>
-            </div>
-          </li>
-          <li id="store">
-            Auto store <i class="fa fa-caret-down"></i>
-            <div class="dropdown4">
-              <div class="item4">Pakwheels Auto store</div>
-              <div class="item4">Find auto Parts</div>
-              <div class="item4">Sell Auto Parts</div>
-            </div>
-          </li>
-          <li>Videos</li>
-          <li>Forum</li>
-          <li>Blog</li>
-          <li>More<i class="fa fa-caret-down"></i></li>
-          <li><span>Post An Ad <i class="fa fa-caret-down"></i></span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <section id="cover">
-    <div class="background">
-      <div class="col1">
-        <div><h1>Find used Cars in Pakistan</h1></div>
-        <div><h4>With thoussands of Cars, We have just the right one for you</h4></div>
-        <div class="react">
-          <ul>
-            <li><span>Car Make or Modal</span></li>
-            <li>All cites <i class="fa fa-caret-down" style="color: rgb(71, 69, 69);"></i></li>
-            <li>Price Range <li class="fa fa-caret-down"></li></li>
-          </ul>
-        </div>
-        <div class="react2">
-          <li><i class="fa fa-search"></i></li>
-        </div>
-      </div>
-      <div class="filter">
-        <div class="fiiletext">
-          <p>Advanced Filter <i class="fa fa-caret-right"></i></p>
-        </div>
-      </div>
-    </div>
-  </section>
-  </header>
-    <!-- Header End -->
-
 </body>
 </html>

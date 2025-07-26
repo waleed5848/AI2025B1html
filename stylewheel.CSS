@@ -1,12 +1,12 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body {
-  font-family: Arial, sans-serif;
+html, body {
   overflow-x: hidden;
 }
+
 .container{
     height: 510px;
 background: linear-gradient(to top, #2a3e66, rgb(4, 4, 75));
@@ -293,6 +293,456 @@ header .container .big-nav .nav ul li{
       margin: 20px 0;
       font-size: 18px;
     }
+    .browser{
+      font-family: 'Inter', sans-serif;
+      background-color: #f6f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .browser {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 30px;
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .tabs div {
+      cursor: pointer;
+      color: #000;
+      padding-bottom: 8px;
+    }
+
+    .tabs .active {
+      border-bottom: 3px solid #007bff;
+      color: #007bff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 20px 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid #e1e4e8;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* .card img, .card svg {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 12px;
+    } */
+     .card img, .card svg {
+  width: 70px;        /* bigger icon size */
+  height: 70px;
+  margin: 0 auto 10px; /* centers the icon */
+  display: block;
+}
+
+
+    .card span {
+      font-size: 15px;
+      color: #333;
+    }
+
+    .arrow {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .arrow button {
+      background: #f0f0f0;
+      border: none;
+      padding: 8px 12px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .offerings {
+  max-width: 1100px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  padding: 0 15px;
+}
+
+.offerings h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #000;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.offer-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  transition: box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.offer-card img {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+  display: block;
+}
+
+
+.offer-card .text {
+  line-height: 1.4;
+}
+
+.offer-card .brand {
+  color: #233d7b;
+  font-size: 14px;
+}
+
+.offer-card .title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+.managed-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #f5f5f5; /* Light gray background like PakWheels */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 10px 10px;
+}
+
+.section-title h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-title a {
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.car-slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px; /* spacing between cards */
+  padding: 10px;
+}
+
+
+
+.car-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.05);
+}
+
+
+.card-img {
+  position: relative;
+}
+
+.card-img img {
+  width: 100%;
+  height: 140px; /* reduce if you want tighter layout */
+  object-fit: cover;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+
+.tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #d70000;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 2px;
+}
+
+.card-info {
+  padding: 12px 10px;
+}
+
+
+.card-info h3 {
+  font-size: 14px;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.card-info .price {
+  color: green;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-info .location {
+  font-size: 13px;
+  color: #888;
+  margin: 2px 0 0;
+}
+
+.view-all-link {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.view-all-link a {
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+}
+.featured-used-cars-2 {
+background-color: white;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.cars-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.cars-section-heading h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cars-section-heading a {
+  color: #0056b3;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.car-card-list-2 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.car-card-2 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 10px;
+  width: 220px;
+  text-align: left;
+  position: relative;
+}
+
+.car-card-2 img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.tag-featured {
+  background-color: #b30000;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.car-card-2 h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #002b60;
+}
+
+.car-card-2 .price {
+  color: #2e8b57;
+  font-weight: bold;
+  margin: 0;
+}
+
+.car-card-2 .location {
+  font-size: 13px;
+  color: #888;
+}
+
+.cars-section-footer {
+  margin-top: 25px;
+}
+
+.cars-section-footer a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: 500;
+}
+.car-card-2 img {
+  height: 170px;           /* consistent height */
+  width: 100%;             /* full width of card */
+  object-fit: cover;       /* keep proportion, crop overflow */
+  border-radius: 6px;
+}
+.neo-featured-block {
+  padding: 30px 20px;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.neo-header-zone {
+  display: flex;
+  flex-direction: column;   /* Stack heading, tabs, link vertically */
+  align-items: flex-start;  /* Align to left */
+  margin-bottom: 20px;
+  position: relative;
+  left: 200px;
+}
+
+
+
+.neo-block-title {
+  font-size: 22px;
+  color: #333;
+}
+
+.neo-tab-line {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.neo-tab-item {
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #555;
+  position: relative;
+}
+
+.neo-tab-active {
+  color: #1e70bf;
+  font-weight: bold;
+}
+
+.neo-tab-active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #1e70bf;
+}
+
+/* Fix layout of link */
+.neo-link-viewall {
+  align-self: flex-end;    /* Align to the right */
+  font-size: 14px;
+  color: #1e70bf;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+
+.neo-car-flexwrap {
+  display: flex;
+  justify-content: center;   /* Center all 4 cards */
+  flex-wrap: nowrap;         /* Keep them on one line */
+  gap: 15px;                  /* Reduced spacing between cards */
+  margin-top: 20px;
+  overflow-x: hidden;         /* Prevent horizontal scroll */
+}
+
+.neo-car-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;               /* Reduced from 220px or min-width */
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.neo-car-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.neo-car-name {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #1e70bf;
+}
+
+.neo-price-range {
+  font-size: 14px;
+  color: green;
+  margin-bottom: 5px;
+}
+
+.neo-rating-line {
+  font-size: 14px;
+  color: #666;
+}
+
+.neo-rating-line span {
+  color: #666;
+}
+
+
+  
   
     
 
