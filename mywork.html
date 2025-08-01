@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farewell Miss Kinza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #fce4ec, #e0f7fa);
+      color: #333;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #ffffffcc;
+      border-radius: 1.5rem;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      animation: fadeInDown 1.5s ease;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      color: #c2185b;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      color: #666;
+    }
+
+    .teacher-image {
+      text-align: center;
+      margin: 2rem 0;
+      animation: zoomIn 2s ease;
+    }
+
+    .teacher-image img {
+      width: 220px;
+      border-radius: 50%;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+      border: 5px solid #f8bbd0;
+    }
+
+    .farewell-msg {
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.4rem;
+      color: #4e4e4e;
+    }
+
+    .memories {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      animation: slideUp 2s ease-in-out;
+    }
+
+    .memory-card {
+      background: #fff0f5;
+      padding: 1.5rem;
+      border-radius: 1.2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    .memory-card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 1rem;
+      color: #666;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      transform: rotate(45deg);
+      animation: float 6s linear infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_a14c4ebd27.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="card">
+    <header>
+      <h1>Thank You, Miss Kinza</h1>
+      <p>For being our guiding light and calm presence</p>
+    </header>
+
+    <div class="teacher-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140047.png" alt="Miss Kinza">
+    </div>
+
+    <section class="farewell-msg">
+      <p>
+        Dear Miss Kinza,<br><br>
+        Today we say goodbye to not just a teacher, but someone who made learning feel warm and welcoming. You brought peace, wisdom, and grace to every class. Your soft voice and strong spirit inspired us deeply.<br><br>
+        Though you're moving on, your teachings and memories will forever echo in our hearts. Thank you for every moment you gave us.<br><br>
+        With deepest respect and love — we'll miss you dearly.<br><br>
+        <em>“Great teachers don’t just teach; they inspire.”</em>
+      </p>
+    </section>
+
+    <section class="memories">
+      <div class="memory-card">🌅 The calm and comforting atmosphere you brought to every class</div>
+      <div class="memory-card">🌟 How your patience helped even the quietest student grow</div>
+      <div class="memory-card">📝 Your creative ways of explaining tough topics</div>
+      <div class="memory-card">🌈 The inspiration you sparked without even trying</div>
+    </section>
+
+    <footer>
+      With heartfelt wishes,<br>
+      Your Students — Class of 2025<br><br>
+      <strong>Created by Waleed Tahir</strong>
+    </footer>
+  </div>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(createHeart, 400);
+  </script>
+</body>
+</html>
