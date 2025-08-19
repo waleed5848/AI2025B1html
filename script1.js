@@ -55,21 +55,22 @@
 //     document.write("Invalid operator");
 // }
 
-let nationality = prompt("Enter your nationality");
-let age = Number(prompt("Enter your age"));
+// let nationality = prompt("Enter your nationality");
+// let age = Number(prompt("Enter your age"));
 
-if(nationality == "pakistani"){
-    if(age >= 18){
-        document.write("You are eligible to vote");
-}
-else{
-    document.write("You are not eligible to vote");
-}
-}
+// if(nationality == "pakistani"){
+//     if(age >= 18){
+//         document.write("You are eligible to vote");
+// }
+// else{
+//     document.write("You are not eligible to vote");
+// }
+// }
 
 
-else{
-    document.write("only pakistani are eligible to vote");
-}
+// else{
+//     document.write("only pakistani are eligible to vote");
+// }
+
 
 
