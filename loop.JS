@@ -25,3 +25,8 @@
 // while(a<=10){
 
 // }
+let a = 10;
+do{
+    document.write(a, "this is do whiles loop" , "<br>")
+    a--
+}while(a>=1)
