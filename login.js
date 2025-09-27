@@ -10,7 +10,7 @@ login.addEventListener("submit",function(e){
     let founduser = users.find(u => u.email === email && u.pass === pass )
 
     if(founduser){
-        localStorage.setItem("loggedinuser", JSON.stringify(founduser))
+        localStorage.setItem('loggedinuser', JSON.stringify(founduser))
         alert("login completed")
         location.assign("Welcome.html")
     }
