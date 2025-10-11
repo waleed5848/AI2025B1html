@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Title -->
+  <title>ezaan.bazar - Your Trusted Online Marketplace</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Welcome to ezaan.bazar, your trusted online marketplace offering a wide range of quality products at great prices." />
+
+  <!-- Keywords -->
+  <meta name="keywords" content="ezaan, bazar, online marketplace, buy products online, affordable shopping" />
+
+  <!-- Author -->
+  <meta name="author" content="ezaan.bazar Team" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.ezaan.bazar" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ezaan.bazar - Your Trusted Online Marketplace" />
+  <meta property="og:description" content="Discover amazing products and unbeatable deals at ezaan.bazar." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ezaan.bazar" />
+  <meta property="og:image" content="https://www.ezaan.bazar/images/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ezaan.bazar - Your Trusted Online Marketplace" />
+  <meta name="twitter:description" content="Discover amazing products and unbeatable deals at ezaan.bazar." />
+  <meta name="twitter:image" content="https://www.ezaan.bazar/images/og-image.jpg" />
+
+</head>
+<body>
+  <header>
+    <h1>Welcome to ezaan.bazar</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Your Trusted Online Marketplace</h2>
+    <p>Explore a wide range of quality products at competitive prices. Shop with confidence at ezaan.bazar!</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ezaan.bazar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
