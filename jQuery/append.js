@@ -54,3 +54,12 @@
 //         $("p").css("color","red")
 //     })
 // })
+$(document).ready(function(){
+    $("p").on({
+        mouseenter : function(){
+            $(this).css
+            "background-color" : "black",
+        }
+    })
+})
+
