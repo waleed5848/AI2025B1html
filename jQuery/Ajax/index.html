@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | My 3D Website</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #111, #222);
+      font-family: "Poppins", sans-serif;
+      color: #ccc;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .home {
+      background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5),
+                  inset 0 1px 1px rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 60px 40px;
+      max-width: 600px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .home:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    p {
+      color: #aaa;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 12px 28px;
+      font-size: 1rem;
+      color: #fff;
+      background: linear-gradient(145deg, #333, #111);
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px #000;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px #000;
+      background: linear-gradient(145deg, #444, #111);
+    }
+
+    button:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px #000 inset;
+    }
+  </style>
+</head>
+<body>
+  <div class="home">
+    <h1>Welcome Home</h1>
+    <p>
+      This is your clean 3D home page — simple, elegant, and focused.  
+      You can add more sections or buttons as needed.
+    </p>
+    <button>Explore More</button>
+  </div>
+</body>
+</html>
